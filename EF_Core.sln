@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF_Core", "EF_Core\EF_Core.csproj", "{07EA4158-E5B6-406B-8F1B-9AF5E3C8506C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestioneFattureClienti", "GestioneFattureClienti\GestioneFattureClienti.csproj", "{6A81B083-7EF9-46F3-BF5B-6E18F7C253BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{07EA4158-E5B6-406B-8F1B-9AF5E3C8506C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07EA4158-E5B6-406B-8F1B-9AF5E3C8506C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07EA4158-E5B6-406B-8F1B-9AF5E3C8506C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A81B083-7EF9-46F3-BF5B-6E18F7C253BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A81B083-7EF9-46F3-BF5B-6E18F7C253BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A81B083-7EF9-46F3-BF5B-6E18F7C253BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A81B083-7EF9-46F3-BF5B-6E18F7C253BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
