@@ -21,7 +21,11 @@ namespace GestioneFattureClienti
             LetturaDb();
 
             //3) Modificare i dati nel Database ---> Update
-            ModificaDb();
+            //commentato per test
+            //ModificaDb();
+
+            //4) Eliminare una fattura del Database ---> Delete
+            EliminaFattura();
 
         }
 
@@ -198,6 +202,39 @@ namespace GestioneFattureClienti
                     Console.WriteLine(item);
                 }
             }
+        }
+
+        static void EliminaFattura()
+        {
+            var db = new FattureClientiContext();
+
+
+            Console.WriteLine("\nEliminiamo un dato dal database");
+            Console.WriteLine("\nPrima della cancellazione le fatture sono:");
+            List<Fattura> listaFatture = [.. db.Fatture];
+            Console.WriteLine("Stampa delle fatture");
+            listaFatture.ForEach(Console.WriteLine);
+            Console.WriteLine("\nEliminiamo la terza fattura");
+
+
+            //accedo alla fattura da eliminare
+            //con il find per chiave primaria
+            var fatturaDaEliminare = db.Fatture.Find(3);
+            //in alternativa con la where
+            var fatturaDaEliminare2 = db.Fatture.Where(f => f.FatturaId == 3).First();
+
+
+            //elimino la fattura dal database
+            if (fatturaDaEliminare is not null)
+            {
+                db.Remove(fatturaDaEliminare);
+            }
+
+            //applico le modifiche
+            db.SaveChanges();
+
+            Console.WriteLine("Stampa delle fatture senza quella eliminata");
+            listaFatture.ForEach(Console.WriteLine);
         }
     }
 
