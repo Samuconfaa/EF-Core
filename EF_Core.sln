@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF_Core", "EF_Core\EF_Core.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestioneFattureClienti", "GestioneFattureClienti\GestioneFattureClienti.csproj", "{6A81B083-7EF9-46F3-BF5B-6E18F7C253BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database_Romanzi", "Database_Romanzi\Database_Romanzi.csproj", "{F2B17E87-F8D3-48FF-A6DD-4AC4DEB9BAB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6A81B083-7EF9-46F3-BF5B-6E18F7C253BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A81B083-7EF9-46F3-BF5B-6E18F7C253BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A81B083-7EF9-46F3-BF5B-6E18F7C253BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2B17E87-F8D3-48FF-A6DD-4AC4DEB9BAB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2B17E87-F8D3-48FF-A6DD-4AC4DEB9BAB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2B17E87-F8D3-48FF-A6DD-4AC4DEB9BAB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2B17E87-F8D3-48FF-A6DD-4AC4DEB9BAB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
