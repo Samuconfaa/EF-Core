@@ -1,5 +1,6 @@
 ﻿using Database_Romanzi.Data;
 using Database_Romanzi.Model;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage;
 using System.Diagnostics;
@@ -52,6 +53,7 @@ namespace Database_Romanzi
                 PopulateDb(db);
             }
         }
+
         static void PopulateDb(RomanziContext db)
         {
             //Almeno 5 autori di nazionalità compresa tra "Americana", "Belga", "Inglese".
@@ -127,6 +129,7 @@ namespace Database_Romanzi
             Console.Write("Cognome: ");
             string cognome = Console.ReadLine().ToLower();
 
+            //versione normale
             var romanziAutori = db.Autori
                 .Where(x => x.Nome.ToLower() == nome.ToLower() && x.Cognome.ToLower() == cognome.ToLower())
                 .Join(db.Romanzi,
@@ -139,7 +142,18 @@ namespace Database_Romanzi
             Console.WriteLine($"I libri che ha scritto {nome} {cognome} sono:");
             romanziAutori.ForEach(Console.WriteLine);
 
-            
+
+            //versione con le navigation proprierty
+            //Include serve a dire di mettere dentro anche i romanzi collegati agli autori filtrati
+
+            /*
+            var romanziAutori = db.Autori
+                .Where(x => x.Nome.ToLower() == nome.ToLower() && x.Cognome.ToLower() == cognome.ToLower())
+                .Include(x => x.Romanzi)
+                .Select(x => x.diocane);
+            */
+
+
         }
 
         static void Query3()
@@ -212,5 +226,4 @@ namespace Database_Romanzi
         }
 
     }
-
 }
