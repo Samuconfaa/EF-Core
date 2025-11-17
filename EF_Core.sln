@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database_Romanzi", "Databas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilizziComputer", "UtilizziComputer\UtilizziComputer.csproj", "{AAAD2F69-4A9B-4AB4-8F16-340A8A8FE2E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Università", "Università\Università.csproj", "{D6376D78-2F92-4378-9330-2A73D45C4CEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{AAAD2F69-4A9B-4AB4-8F16-340A8A8FE2E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAAD2F69-4A9B-4AB4-8F16-340A8A8FE2E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAAD2F69-4A9B-4AB4-8F16-340A8A8FE2E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6376D78-2F92-4378-9330-2A73D45C4CEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6376D78-2F92-4378-9330-2A73D45C4CEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6376D78-2F92-4378-9330-2A73D45C4CEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6376D78-2F92-4378-9330-2A73D45C4CEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
